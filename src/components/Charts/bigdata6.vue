@@ -316,42 +316,6 @@ export default {
     this.chart.dispose()
     this.chart = null
   },
-  methods: {
-    initChart() {
-      this.chart = echarts.init(document.getElementById(this.id))
-      this.chart.setOption({
-        backgroundColor: '#344b58',
-        title: {
-          text: '起降架次(xxxxxxxxxxxxxxxxxx)',
-          x: '20',
-          top: '20',
-          textStyle: {
-            color: '#fff',
-            fontSize: '22'
-          },
-          subtextStyle: {
-            color: '#90979c',
-            fontSize: '16'
-          }
-        },
-        tooltip: {
-          trigger: 'axis',
-          axisPointer: {
-            textStyle: {
-              color: '#fff'
-            }
-          }
-        },
-        grid: {
-          left: '5%',
-          right: '5%',
-          borderWidth: 0,
-          top: 150,
-          bottom: 95,
-          textStyle: {
-            color: '#fff'
-          }
-    }
   }
 }
 </script>

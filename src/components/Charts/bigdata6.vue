@@ -453,68 +453,7 @@ export default {
             color: '#fff' },
           borderColor: '#90979c'
 
-        }, {
-          type: 'inside',
-          show: true,
-          height: 15,
-          start: 1,
-          end: 35
-        }],
-        series: [{
-          name: '起降架次',
-          type: 'bar',
-          stack: 'total',
-          barMaxWidth: 35,
-          barGap: '10%',
-          itemStyle: {
-            normal: {
-              color: 'rgba(255,144,128,1)',
-              label: {
-                show: true,
-                textStyle: {
-                  color: '#fff'
-                },
-                position: 'insideTop',
-                formatter(p) {
-                  return p.value > 0 ? p.value : ''
-                }
-              }
-            }
-          },
-          data: [
-            "341681",
-            "211309",
-            "205046",
-            "169957",
-            "151430",
-            "132901",
-            "109035",
-            "91372",
-            "79262",
-            "72674",
-            "68879",
-            "67014",
-            "62826",
-            "59534",
-            "55508",
-            "51793",
-            "50387",
-            "48916",
-            "47460",
-            "43072",
-            "36525",
-            "35805",
-            "35318",
-            "33403",
-            "31761",
-            "30870",
-            "26351",
-            "25558",
-            "23916",
-            "19186",
-            "16089"
-          ]
-        }
+    
         ]
       })
     }

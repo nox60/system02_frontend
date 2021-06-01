@@ -532,33 +532,3 @@ export const constantRoutes = [
     ]
   }
 ]
-
-/**
- * asyncRoutes
- * the routes that need to be dynamically loaded based on user roles
- */
-export const asyncRoutes = [
-  {
-    path: '/SystemCenter',
-    component: Layout,
-    redirect: '/SystemCenter',
-    alwaysShow: true, // will always show the root menu
-    name: 'Permission',
-    meta: {
-      accessCode: 1000,
-      title: '系统中心',
-      icon: 'lock',
-      roles: ['admin', 'editor'] // you can set roles in root nav
-    },
-    children: [
-      {
-        path: 'users',
-        component: () => import('@/views/dashboard/admin'),
-        name: '系统中心',
-        meta: {
-          accessCode: 1001,
-          title: '系统中心',
-          roles: ['admin']
-        }
-      }
-    ]

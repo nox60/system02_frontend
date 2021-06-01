@@ -456,39 +456,3 @@ export const constantRoutes = [
     path: '/401',
     component: () => import('@/views/error-page/401'),
     hidden: true
-  },
-  {
-    path: '/active-user',
-    component: () => import('@/views/mydata/mydata-createOrEdit'),
-    hidden: true
-  },
-  {
-    path: '/3005',
-    component: Layout,
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/mydata/mydata-createOrEdit'),
-        name: '3005',
-        meta: { title: '3005', icon: 'tab', accessCode: 9 }
-      }
-    ]
-  },
-  {
-    path: '/',
-    component: Layout,
-    redirect: '/dashboard',
-    children: [
-      {
-        path: 'dashboard',
-        component: () => import('@/views/dashboard/index'),
-        name: 'Dashboard',
-        meta: { title: 'Dashboard', icon: 'dashboard', affix: true }
-      }
-    ]
-  },
-  {
-    path: '/3001',
-    component: () => import('@/views/mydata/mydata-createOrEdit'),
-    hidden: false
-  },

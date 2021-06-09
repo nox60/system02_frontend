@@ -53,27 +53,3 @@
   </el-table>
 </template>
 
-<script>
-import { fetchList } from '@/api/article'
-
-export default {
-  filters: {
-    statusFilter(status) {
-      const statusMap = {
-        published: 'success',
-        draft: 'info',
-        deleted: 'danger'
-      }
-      return statusMap[status]
-    }
-  },
-  props: {
-    type: {
-      type: String,
-      default: 'CN'
-    }
-  },
-  data() {
-    return {
-      li
-

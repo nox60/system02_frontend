@@ -36,20 +36,3 @@
         <svg-icon v-for="n in +scope.row.importance" :key="n" icon-class="star" />
       </template>
     </el-table-column>
-
-    <el-table-column align="center" label="Readings" width="95">
-      <template slot-scope="scope">
-        <span>{{ scope.row.pageviews }}</span>
-      </template>
-    </el-table-column>
-
-    <el-table-column class-name="status-col" label="Status" width="110">
-      <template slot-scope="{row}">
-        <el-tag :type="row.status | statusFilter">
-          {{ row.status }}
-        </el-tag>
-      </template>
-    </el-table-column>
-  </el-table>
-</template>
-
